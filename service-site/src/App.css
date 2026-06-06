@@ -1,0 +1,324 @@
+.top-nav {
+  padding: 0.9rem 0;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #d9e3df;
+  box-shadow: 0 8px 24px rgba(34, 67, 57, 0.08);
+}
+
+.logo {
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;
+  background: #245c4d;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.top-nav .navbar-brand.logo:hover,
+.top-nav .navbar-brand.logo:focus {
+  background: #19473b;
+  color: #ffffff;
+}
+
+.nav-links {
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.top-nav .nav-link {
+  padding: 0.55rem 0.85rem;
+  border-radius: 8px;
+  color: #334c45;
+  font-weight: 700;
+}
+
+.top-nav .nav-link:hover,
+.top-nav .nav-link:focus {
+  background: #e9f4ef;
+  color: #245c4d;
+}
+
+.hero {
+  padding: 145px 0 80px;
+  background: linear-gradient(135deg, rgba(36, 92, 77, 0.96), rgba(60, 132, 108, 0.88));
+}
+
+.hero-box {
+  max-width: 780px;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  box-shadow: 0 24px 60px rgba(16, 49, 40, 0.22);
+}
+
+.hero h1 {
+  max-width: 700px;
+  margin: 0;
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-weight: 900;
+  line-height: 0.98;
+}
+
+.hero-text {
+  max-width: 680px;
+  margin: 1.25rem 0 1.75rem;
+  color: #eef8f4;
+  font-size: 1.2rem;
+  line-height: 1.65;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.btn {
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.btn-primary {
+  border-color: #d66f52;
+  background: #d66f52;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  border-color: #bd5c42;
+  background: #bd5c42;
+}
+
+.btn-outline-primary {
+  border-color: #245c4d;
+  color: #245c4d;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  border-color: #245c4d;
+  background: #245c4d;
+}
+
+.page-section {
+  padding: 72px 0;
+  background: #ffffff;
+}
+
+.light-section {
+  background: #f1f7f4;
+}
+
+.small-title {
+  margin: 0 0 0.65rem;
+  color: #d66f52;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.hero .small-title {
+  color: #d9f0e7;
+}
+
+h2 {
+  margin: 0;
+  color: #245c4d;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+.section-title {
+  max-width: 720px;
+  margin-bottom: 2rem;
+}
+
+.section-title p,
+.booking-intro,
+.contact-text {
+  margin-top: 1rem;
+  color: #5a6d67;
+  line-height: 1.7;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid #d9e3df;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(34, 67, 57, 0.08);
+}
+
+.service-card h3 {
+  color: #245c4d;
+  font-size: 1.35rem;
+  font-weight: 900;
+}
+
+.service-card p {
+  color: #5a6d67;
+  line-height: 1.6;
+}
+
+.service-price {
+  color: #d66f52 !important;
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.booking-steps {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.booking-steps div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.booking-steps span {
+  display: grid;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 8px;
+  background: #245c4d;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.booking-steps p {
+  margin: 0;
+  color: #4e625c;
+}
+
+.booking-form,
+.confirmation-box,
+.contact-card {
+  padding: 2rem;
+  border: 1px solid #d9e3df;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 14px 36px rgba(34, 67, 57, 0.09);
+}
+
+.form-label {
+  color: #334c45;
+  font-weight: 800;
+}
+
+.form-control,
+.form-select {
+  min-height: 48px;
+  border-radius: 8px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #d66f52;
+  box-shadow: 0 0 0 0.2rem rgba(214, 111, 82, 0.16);
+}
+
+.confirmation-box {
+  text-align: center;
+}
+
+.confirmation-box h3 {
+  color: #245c4d;
+  font-weight: 900;
+}
+
+.confirmation-box p {
+  color: #5a6d67;
+  line-height: 1.65;
+}
+
+.confirmation-mark {
+  display: grid;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.25rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #245c4d;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.contact-card p {
+  margin-bottom: 0.85rem;
+  color: #4e625c;
+}
+
+.contact-card p:last-child {
+  margin-bottom: 0;
+}
+
+.site-footer {
+  padding: 1.5rem 0;
+  background: #183e34;
+  color: #e4f0ec;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .nav-links {
+    gap: 0;
+  }
+
+  .top-nav .nav-link {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding: 125px 0 60px;
+  }
+
+  .hero-box {
+    padding: 1.5rem;
+  }
+
+  .page-section {
+    padding: 56px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 470px) {
+  .logo {
+    font-size: 1rem;
+  }
+
+  .top-nav .nav-link {
+    padding: 0.45rem 0.35rem;
+    font-size: 0.82rem;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+}
