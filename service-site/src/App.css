@@ -1,47 +1,38 @@
-.top-nav {
+.top-nav{
   padding: 0.9rem 0;
   background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid #d9e3df;
-  box-shadow: 0 8px 24px rgba(34, 67, 57, 0.08);
-}
+  box-shadow: 0 8px 24px rgba(34, 67, 57, 0.08);}
 
-.logo {
+.logo{
   padding: 0.5rem 0.85rem;
   border-radius: 8px;
   background: #245c4d;
   color: #ffffff;
-  font-weight: 800;
-}
+  font-weight: 800;}
 
-.top-nav .navbar-brand.logo:hover,
-.top-nav .navbar-brand.logo:focus {
+.top-nav .navbar-brand.logo:hover, .top-nav .navbar-brand.logo:focus-visible {
   background: #19473b;
-  color: #ffffff;
-}
+  color: #ffffff;}
 
 .nav-links {
   flex-direction: row;
-  gap: 0.5rem;
-}
+  gap: 0.5rem;}
 
-.top-nav .nav-link {
+.top-nav .nav-link{
   padding: 0.55rem 0.85rem;
   border-radius: 8px;
   color: #334c45;
-  font-weight: 700;
-}
+  font-weight: 700;}
 
-.top-nav .nav-link:hover,
-.top-nav .nav-link:focus {
+.top-nav .nav-link:hover, .top-nav .nav-link:focus-visible{
   background: #e9f4ef;
   color: #245c4d;
 }
 
 .hero {
   padding: 118px 0 56px;
-  background:
-    linear-gradient(135deg, rgba(29, 76, 64, 0.93), rgba(60, 132, 108, 0.82)),
-    url("./assets/hero-grooming-bg.jpg");
+  background: linear-gradient(135deg, rgba(29, 76, 64, 0.93), rgba(60, 132, 108, 0.82)), url("./assets/hero-grooming-bg.jpg");
   background-position: center 42%;
   background-size: cover;
 }
@@ -57,13 +48,12 @@
   backdrop-filter: blur(2px);
 }
 
-.hero h1 {
+.hero h1{
   max-width: 700px;
   margin: 0;
   font-size: clamp(2.8rem, 7vw, 5.5rem);
   font-weight: 900;
-  line-height: 0.98;
-}
+  line-height: 0.98; }
 
 .hero-text {
   max-width: 680px;
@@ -76,8 +66,7 @@
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.85rem;
-}
+  gap: 0.85rem; }
 
 .btn {
   border-radius: 8px;
@@ -89,31 +78,39 @@
   background: #d66f52;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:hover, .btn-primary:focus {
   border-color: #bd5c42;
   background: #bd5c42;
 }
 
-.btn-outline-primary {
+.btn-outline-primary{
   border-color: #245c4d;
   color: #245c4d;
 }
 
-.btn-outline-primary:hover,
-.btn-outline-primary:focus {
+.btn-outline-primary:hover, .btn-outline-primary:focus {
   border-color: #245c4d;
   background: #245c4d;
 }
 
 .page-section {
   padding: 72px 0;
-  background: #ffffff;
+  background: #ffffff;}
+
+main {
+  flex: 1;
+}
+
+.standalone-page .page-section{
+  padding-top: 118px;
+}
+
+.standalone-page {
+  background: #f1f7f4;
 }
 
 .light-section {
-  background: #f1f7f4;
-}
+  background: #f1f7f4;}
 
 .small-title {
   margin: 0 0 0.65rem;
@@ -128,36 +125,32 @@
   color: #d9f0e7;
 }
 
-h2 {
+h2{
   margin: 0;
   color: #245c4d;
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 900;
-  line-height: 1.05;
-}
+  line-height: 1.05;}
 
 .section-title {
   max-width: 720px;
   margin-bottom: 2rem;
 }
 
-.section-title p,
-.booking-intro,
-.contact-text {
+.section-title p, .booking-intro, .contact-text {
   margin-top: 1rem;
   color: #5a6d67;
   line-height: 1.7;
 }
 
-.service-card {
+.service-card{
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
   border: 1px solid #d9e3df;
   border-radius: 8px;
   background: #ffffff;
-  box-shadow: 0 12px 30px rgba(34, 67, 57, 0.08);
-}
+  box-shadow: 0 12px 30px rgba(34, 67, 57, 0.08);}
 
 .service-card h3 {
   color: #245c4d;
@@ -167,11 +160,10 @@ h2 {
 
 .service-card p {
   color: #5a6d67;
-  line-height: 1.6;
-}
+  line-height: 1.6; }
 
 .service-price {
-  color: #d66f52 !important;
+  color: #d66f52;
   font-size: 0.82rem;
   font-weight: 900;
   letter-spacing: 0.08em;
@@ -181,8 +173,7 @@ h2 {
 .booking-steps {
   display: grid;
   gap: 1rem;
-  margin-top: 2rem;
-}
+  margin-top: 2rem; }
 
 .booking-steps div {
   display: flex;
@@ -190,7 +181,7 @@ h2 {
   gap: 1rem;
 }
 
-.booking-steps span {
+.booking-steps span{
   display: grid;
   flex: 0 0 42px;
   width: 42px;
@@ -199,17 +190,24 @@ h2 {
   border-radius: 8px;
   background: #245c4d;
   color: #ffffff;
-  font-weight: 900;
-}
+  font-weight: 900; }
 
 .booking-steps p {
   margin: 0;
   color: #4e625c;
 }
 
-.booking-form,
-.confirmation-box,
-.contact-card {
+.confirmation-column {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+
+.confirmation-column .confirmation-box {
+  width: 100%;
+}
+
+.booking-form, .confirmation-box, .contact-card{
   padding: 2rem;
   border: 1px solid #d9e3df;
   border-radius: 8px;
@@ -217,24 +215,133 @@ h2 {
   box-shadow: 0 14px 36px rgba(34, 67, 57, 0.09);
 }
 
-.form-label {
-  color: #334c45;
-  font-weight: 800;
+.guide-panel, .comparison-panel {
+  padding: 2rem;
+  border: 1px solid #d9e3df;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 14px 36px rgba(34, 67, 57, 0.09);}
+
+.guide-panel {
+  margin-bottom: 1.5rem; }
+
+.guide-action{
+  display: flex;
+  flex-direction: column;
 }
 
-.form-control,
-.form-select {
+.recommendation-card {
+  min-height: 132px;
+  padding: 1.25rem;
+  border-radius: 8px;
+  background: #e9f4ef;
+}
+
+.recommendation-card h3 {
+  margin: 0 0 0.55rem;
+  color: #245c4d;
+  font-size: 1.55rem;
+  font-weight: 900;
+}
+
+.recommendation-card p:last-child {
+  margin-bottom: 0;
+  color: #4e625c;
+  font-weight: 800; }
+
+.comparison-header{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.comparison-header h3 {
+  margin: 0;
+  color: #245c4d;
+  font-size: 1.6rem;
+  font-weight: 900; }
+
+.service-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.service-tab {
+  min-height: 42px;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid #c9d8d3;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #334c45;
+  font-weight: 800; }
+
+.service-tab:hover, .service-tab:focus {
+  border-color: #245c4d;
+  color: #245c4d;
+}
+
+.service-tab.active {
+  border-color: #245c4d;
+  background: #245c4d;
+  color: #ffffff;
+}
+
+.service-detail{
+  display: grid;
+  grid-template-columns: 1.15fr 0.9fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.service-detail h4, .service-detail h5{
+  color: #245c4d;
+  font-weight: 900;
+}
+
+.service-detail h4 {
+  margin: 0 0 0.75rem;
+  font-size: 1.55rem;
+}
+
+.service-detail h5 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+}
+
+.service-detail p, .service-detail li {
+  color: #5a6d67;
+  line-height: 1.65;
+}
+
+.service-detail ul {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding-left: 1.1rem;}
+
+.detail-note {
+  color: #4e625c;
+  font-weight: 700;}
+
+.form-label {
+  color: #334c45;
+  font-weight: 800; }
+
+.form-control, .form-select {
   min-height: 48px;
   border-radius: 8px;
 }
 
-.form-control:focus,
-.form-select:focus {
+.form-control:focus, .form-select:focus {
   border-color: #d66f52;
   box-shadow: 0 0 0 0.2rem rgba(214, 111, 82, 0.16);
 }
 
-.confirmation-box {
+.confirmation-box{
   text-align: center;
 }
 
@@ -248,18 +355,11 @@ h2 {
   line-height: 1.65;
 }
 
-.confirmation-mark {
-  display: grid;
+.confirmation-mark{
   width: 64px;
   height: 64px;
   margin: 0 auto 1.25rem;
-  place-items: center;
-  border-radius: 50%;
-  background: #245c4d;
-  color: #ffffff;
-  font-size: 2rem;
-  font-weight: 900;
-}
+  display: block; }
 
 .contact-card p {
   margin-bottom: 0.85rem;
@@ -273,8 +373,7 @@ h2 {
 .site-footer {
   padding: 1.5rem 0;
   background: #183e34;
-  color: #e4f0ec;
-}
+  color: #e4f0ec;}
 
 .footer-content {
   display: flex;
@@ -282,7 +381,7 @@ h2 {
   gap: 1rem;
 }
 
-.footer-content p {
+.footer-content p{
   margin: 0;
 }
 
@@ -291,7 +390,7 @@ h2 {
     gap: 0;
   }
 
-  .top-nav .nav-link {
+  .top-nav .nav-link{
     padding: 0.5rem;
     font-size: 0.9rem;
   }
@@ -300,7 +399,7 @@ h2 {
     padding: 108px 0 44px;
   }
 
-  .hero-box {
+  .hero-box{
     padding: 1.25rem;
   }
 
@@ -308,22 +407,47 @@ h2 {
     padding: 56px 0;
   }
 
-  .footer-content {
+  .standalone-page .page-section {
+    padding-top: 108px;
+  }
+
+  .footer-content{
     flex-direction: column;
   }
+
+  .comparison-header, .service-detail {
+    display: block;
+  }
+
+  .comparison-header h3{
+    margin-bottom: 1rem;}
+
+  .service-tabs {
+    justify-content: flex-start;
+  }
+
+  .service-detail {
+    min-height: 0;
+  }
+
+  .service-detail > div{
+    margin-bottom: 1.4rem;
+  }
+
+  .service-detail > div:last-child {
+    margin-bottom: 0;}
 }
 
-@media (max-width: 470px) {
-  .logo {
+@media (max-width: 470px){
+  .logo{
     font-size: 1rem;
   }
 
-  .top-nav .nav-link {
+  .top-nav .nav-link{
     padding: 0.45rem 0.35rem;
-    font-size: 0.82rem;
-  }
+    font-size: 0.80rem;}
 
-  .hero-buttons .btn {
+  .hero-buttons .btn{
     width: 100%;
   }
 }
