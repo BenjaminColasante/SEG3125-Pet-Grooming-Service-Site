@@ -91,11 +91,11 @@ function App() {
       <header id="top" className="hero">
         <div className="container">
           <div className="hero-box">
-            <p className="small-title">Mobile dog grooming in Ottawa</p>
-            <h1>Comfortable grooming at your door</h1>
+            <p className="small-title">Dog grooming in Ottawa</p>
+            <h1>Comfortable grooming with a personal touch</h1>
             <p className="hero-text">
               Paws & Polish provides calm, one-on-one dog grooming from a fully
-              equipped mobile studio. Compare services, see prices, and request an
+              equipped studio. Compare services, see prices, and request an
               appointment online.
             </p>
 
@@ -402,10 +402,10 @@ function App() {
 
               <div className="col-md-5">
                 <div className="contact-card">
-                  <p><strong>Phone:</strong> (613) 555-0147</p>
-                  <p><strong>Email:</strong> hello@pawsandpolish.ca</p>
+                  <p><strong>Phone:</strong> 613-555-0147</p>
+                  <p><strong>Email:</strong> pawsandpolish@gmail.com</p>
                   <p><strong>Hours:</strong> Monday–Saturday, 9:00 AM–7:00 PM</p>
-                  <p><strong>Service area:</strong> Ottawa and nearby communities</p>
+                  <p><strong>Service area:</strong> 511 Ottawa Road</p>
                 </div>
               </div>
             </div>

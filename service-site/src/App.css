@@ -38,18 +38,23 @@
 }
 
 .hero {
-  padding: 145px 0 80px;
-  background: linear-gradient(135deg, rgba(36, 92, 77, 0.96), rgba(60, 132, 108, 0.88));
+  padding: 118px 0 56px;
+  background:
+    linear-gradient(135deg, rgba(29, 76, 64, 0.93), rgba(60, 132, 108, 0.82)),
+    url("./assets/hero-grooming-bg.jpg");
+  background-position: center 42%;
+  background-size: cover;
 }
 
 .hero-box {
   max-width: 780px;
-  padding: 2.5rem;
+  padding: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(18, 54, 45, 0.34);
   color: #ffffff;
   box-shadow: 0 24px 60px rgba(16, 49, 40, 0.22);
+  backdrop-filter: blur(2px);
 }
 
 .hero h1 {
@@ -292,11 +297,11 @@ h2 {
   }
 
   .hero {
-    padding: 125px 0 60px;
+    padding: 108px 0 44px;
   }
 
   .hero-box {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
 
   .page-section {
