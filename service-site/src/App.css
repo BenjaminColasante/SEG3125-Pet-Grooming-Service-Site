@@ -11,9 +11,17 @@
   color: #ffffff;
   font-weight: 800;}
 
-.top-nav .navbar-brand.logo:hover, .top-nav .navbar-brand.logo:focus-visible {
+.top-nav .navbar-brand.logo:hover {
   background: #19473b;
-  color: #ffffff;}
+  color: #ffffff;
+  box-shadow: none;
+  outline: none;}
+
+.top-nav .navbar-brand.logo:focus, .top-nav .navbar-brand.logo:focus-visible, .top-nav .navbar-brand.logo:active {
+  background: #245c4d;
+  color: #ffffff;
+  box-shadow: none;
+  outline: none;}
 
 .nav-links {
   flex-direction: row;

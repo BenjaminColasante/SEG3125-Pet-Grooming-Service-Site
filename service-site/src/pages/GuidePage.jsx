@@ -9,25 +9,56 @@ function GuidePage({
   setDogSize,
   setDogNeed,
   chooseService,
-}){
+}) {
 
   const [activeService, setActiveService] = useState('Bath & Brush')
+
+  let bathButtonClass = 'service-tab'
+  let fullGroomButtonClass = 'service-tab'
+  let desheddingButtonClass = 'service-tab'
+
+  if (activeService === 'Bath & Brush'){
+    bathButtonClass = 'service-tab active'
+  }
+
+  if (activeService === 'Full Groom') {
+    fullGroomButtonClass = 'service-tab active'}
+
+  if (activeService === 'De-shedding Care'){
+    desheddingButtonClass = 'service-tab active'
+  }
 
   const handleDogSizeChange = (event) => {
     setDogSize(event.target.value)
   }
 
   const handleDogNeedChange = (event) => {
-    setDogNeed(event.target.value)
-  }
+    setDogNeed(event.target.value)}
 
   const chooseRecommendedService = () => {
-    chooseService(recommendedName)
+    chooseService(recommendedName) }
+
+  const showBathAndBrush = () => {
+    setActiveService('Bath & Brush')
   }
 
-  const chooseActiveService = () => {
-    chooseService(activeService)
+  const showFullGroom = () => {
+    setActiveService('Full Groom')
   }
+
+  const showDesheddingCare = () => {
+    setActiveService('De-shedding Care')
+  }
+
+  const chooseBathAndBrush = () => {
+    chooseService('Bath & Brush')}
+
+  const chooseFullGroom = () => {
+    chooseService('Full Groom')
+  }
+
+  const chooseDesheddingCare = () => {
+    chooseService('De-shedding Care')}
 
   return (
     <section id="guide" className="page-section light-section">
@@ -109,33 +140,27 @@ function GuidePage({
           <div className="comparison-header">
 
             <h3>Compare service details</h3>
-            <div className="service-tabs" role="tablist" aria-label="Service details">
+            <div className="service-tabs">
               
               <button
-                className={`service-tab${activeService === 'Bath & Brush' ? ' active' : ''}`}
+                className={bathButtonClass}
                 type="button"
-                role="tab"
-                aria-selected={activeService === 'Bath & Brush'}
-                onClick={() => setActiveService('Bath & Brush')}
+                onClick={showBathAndBrush}
               > Bath & Brush
               </button>
 
               <button
-                className={`service-tab${activeService === 'Full Groom' ? ' active' : ''}`}
+                className={fullGroomButtonClass}
                 type="button"
-                role="tab"
-                aria-selected={activeService === 'Full Groom'}
-                onClick={() => setActiveService('Full Groom')}
+                onClick={showFullGroom}
               >
                 Full Groom
               </button>
 
               <button
-                className={`service-tab${activeService === 'De-shedding Care' ? ' active' : ''}`}
+                className={desheddingButtonClass}
                 type="button"
-                role="tab"
-                aria-selected={activeService === 'De-shedding Care'}
-                onClick={() => setActiveService('De-shedding Care')}
+                onClick={showDesheddingCare}
               >De-shedding Care
               </button>
             </div>
@@ -143,7 +168,7 @@ function GuidePage({
 
           {activeService === 'Bath & Brush' && (
 
-            <article className="service-detail" role="tabpanel">
+            <article className="service-detail">
               <div>
                 <p className="service-price">From $55 | 45 minutes</p>
                 <h4>Bath & Brush</h4>
@@ -177,7 +202,7 @@ function GuidePage({
                 <button
                   className="btn btn-outline-primary"
                   type="button"
-                  onClick={chooseActiveService}
+                  onClick={chooseBathAndBrush}
                 >Choose Bath & Brush
                 </button>
 
@@ -186,7 +211,7 @@ function GuidePage({
           )}
 
           {activeService === 'Full Groom' && (
-            <article className="service-detail" role="tabpanel">
+            <article className="service-detail">
               <div>
                 <p className="service-price">From $85 | 90 minutes</p>
                 <h4>Full Groom</h4>
@@ -222,7 +247,7 @@ function GuidePage({
                 <button
                   className="btn btn-outline-primary"
                   type="button"
-                  onClick={chooseActiveService}> Choose Full Groom
+                  onClick={chooseFullGroom}> Choose Full Groom
                 </button>
 
               </div>
@@ -230,7 +255,7 @@ function GuidePage({
           )}
 
           {activeService === 'De-shedding Care' && (
-            <article className="service-detail" role="tabpanel">
+            <article className="service-detail">
               <div>
                 <p className="service-price">From $70 | 60 minutes</p>
                 <h4>De-shedding Care</h4>
@@ -265,7 +290,7 @@ function GuidePage({
                 <button
                   className="btn btn-outline-primary"
                   type="button"
-                  onClick={chooseActiveService}
+                  onClick={chooseDesheddingCare}
                 >Choose De-shedding Care
                 </button>
 
